@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-Arafath-Rahman.git"
+    "url": "https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-Rakib-cloud"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-Arafath-Rahman/issues"
+    "url": "https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-Rakib-cloud/issues"
   },
-  "homepage": "https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-Arafath-Rahman#readme",
+  "homepage": "https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-Rakib-cloud#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",

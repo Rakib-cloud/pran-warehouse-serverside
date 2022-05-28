@@ -42,7 +42,7 @@ async function run() {
   try {
     await client.connect();
     const itemCollection = client
-      .db("pran-dealer-inventory")
+      .db("warehouse")
       .collection("item");
 
     //AUTH
