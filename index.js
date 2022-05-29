@@ -45,7 +45,7 @@ async function run() {
     await client.connect();
     const itemCollection = client
       .db("pran-warehouse")
-      .collection("item");
+      .collection("items");
 
     //AUTH
     app.post("/getToken", (req, res) => {
