@@ -74,19 +74,22 @@ async function run() {
     });
 
     // get all items of an user
-    app.get("/myItems", verifyJWT, async (req, res) => {
-      const tokenEmail = req.decoded?.email;
-      const email = req.query.email;
+    app.get("/myItems/:email",  async (req, res) => {
+      // const tokenEmail = req.decoded?.email;
+      // const email = req.query.email;
 
-      if (email === tokenEmail) {
-        const query = { supplier: email };
-        const cursor = itemCollection.find(query);
-        const items = await cursor.toArray();
-        res.send(items);
-      }
-      else {
-        res.status(403).send({ message: "forbidden access!" });
-      }
+      // if (email === tokenEmail) {
+      //   const query = { supplier: email };
+        
+      // }
+      // else {
+      //   res.status(403).send({ message: "forbidden access!" });
+      // }
+      const email=req.params.email;
+      const filter={supplier:email};
+      const cursor = await itemCollection.findOne(filter);
+        // const items = await cursor.toArray();
+        res.send(cursor);
     });
 
     //add item to inventory - post
